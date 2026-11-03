@@ -43,20 +43,8 @@
 | `style.css` | Оформление нового столбца |
 | `icons/` | Иконки расширения |
 | `assets/screenshot.webp` | Скриншот работы на странице Ozon |
-| `tests/test_extension.py` | Автоматизированные проверки DOM (Playwright) |
 | `AGENTS.md` | Контекст и правила для AI-ассистентов и разработчиков |
 
-## Тестирование
-
-Нужны Python 3, пакет `playwright` и браузер Chromium:
-
-```bash
-pip install playwright
-python -m playwright install chromium
-python -m unittest discover -s tests -p 'test_extension.py' -v
-```
-
-Тесты работают на **синтетической HTML-таблице** и проверяют расчет, пустые строки, переключение корзины, изменения цены, перерисовку DOM и варианты заголовка. Тесты на сохранённой HTML-копии также проводились локально, однако она не включена в публичный репозиторий.
 
 ## Ограничения
 
