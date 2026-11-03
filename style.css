@@ -1,0 +1,46 @@
+/* Only the extension's injected table column is affected. */
+th[data-ozrp-header],
+td[data-ozrp-cell] {
+  width: 150px !important;
+  min-width: 150px !important;
+  max-width: 150px !important;
+  box-sizing: border-box;
+}
+
+th[data-ozrp-header] {
+  white-space: normal;
+}
+
+td[data-ozrp-cell] {
+  vertical-align: middle;
+  font-variant-numeric: tabular-nums;
+  white-space: normal;
+}
+
+td[data-ozrp-cell] .ozrp-amount {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+td[data-ozrp-cell].ozrp-cheap {
+  color: #08783e !important;
+  background-color: #e4f8ea !important;
+}
+
+td[data-ozrp-cell] .ozrp-best:not([hidden]) {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #005bff;
+  background: #e8f0ff;
+  white-space: nowrap;
+}
+
+td[data-ozrp-cell] .ozrp-best[hidden] {
+  display: none !important;
+}
